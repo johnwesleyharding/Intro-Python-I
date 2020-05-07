@@ -22,7 +22,6 @@ w = open('bar.txt', 'w')
 w.write('Needless to say, the spectacle of an individual moving against his or her expert community\n')
 w.write('away from carrots and towards sticks is generally viewed as a cause for alarm\n')
 w.write('independently of whether that individual is a malfunctioning fool or a genius about to invalidate community groupthink.\n')
-w.close()
 
 with open('bar.txt') as f:
     d = f.read()

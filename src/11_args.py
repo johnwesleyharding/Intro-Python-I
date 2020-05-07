@@ -42,10 +42,10 @@ def f3(n, m = None):
     if m == None:
         m = 1
     
-    return n + m
+    print(n + m)
 
-print(f3(1, 2))  # Should print 3
-print(f3(8))     # Should print 9
+f3(1, 2)  # Should print 3
+f3(8)     # Should print 9
 
 
 # Write a function f4 that accepts an arbitrary number of keyword arguments and
@@ -58,8 +58,8 @@ print(f3(8))     # Should print 9
 
 def f4(**kwargs):
     
-    for kwarg in kwargs:
-        print(f'key: {kwarg}, value: {kwargs[kwarg]}')
+    for k in kwargs:
+        print(f'key: {k}, value: {kwargs[k]}')
 
 # Should print
 # key: a, value: 12
@@ -67,7 +67,6 @@ def f4(**kwargs):
 f4(a=12, b=30)
 
 # Should print
-# key: city, value: Berkeley
 # key: population, value: 121240
 # key: founded, value: "March 23, 1868"
 f4(city="Berkeley", population=121240, founded="March 23, 1868")
